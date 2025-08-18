@@ -1,0 +1,16 @@
+node {
+    stage('Build') {
+        echo 'Étape de construction en cours...'
+        // Commandes de build
+    }
+    
+    stage('Test') {
+        echo 'Exécution des tests...'
+        // Commandes de test
+    }
+    
+    stage('Deploy') {
+        echo 'Déploiement en cours...'
+        // Commandes de déploiement
+    }
+}
