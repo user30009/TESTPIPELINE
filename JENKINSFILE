@@ -1,16 +1,13 @@
-node {
-    stage('Build') {
-        echo 'Étape de construction en cours...'
-        // Commandes de build
-    }
-    
-    stage('Test') {
-        echo 'Exécution des tests...'
-        // Commandes de test
-    }
-    
-    stage('Deploy') {
-        echo 'Déploiement en cours...'
-        // Commandes de déploiement
-    }
+
+pipeline {  
+
+agent any  
+
+stages {    stage('Build')  { steps { echo 'Compilation…' } }    
+
+stage('Test')   { steps { echo 'Tests…' } }    
+
+stage('Deploy') { steps { echo 'Déploiement…' } } 
+
+ }
 }
